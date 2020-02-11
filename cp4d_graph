@@ -31,6 +31,7 @@ echo pod_module=\$pod_module
 #styling and initial module loop
 echo digraph CP4D { > output.txt ;
 echo node \[fontsize = 36,style = filled,color=salmon2] >> output.txt; 
+echo layout=fdp; K=0.5; overlap=scale; splines=polyline;
 for module in \$(./jq '.spec.modules|map(.name)|join(" ")' test.json| sed 's/"//g'); 
     do 
         #change styling for modules
