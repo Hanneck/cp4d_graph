@@ -1,7 +1,7 @@
 cat <<EOF > draw.sh
 #!/bin/bash
 #CP4D dependancy graph
-#Linux instructions
+#Linux version
 
 echo Make sure you are in the correct namespace \(oc project X\)
 
