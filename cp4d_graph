@@ -54,7 +54,7 @@ for module in \$(./jq '.spec.modules|map(.name)|join(" ")' test.json| sed 's/"//
     done; 
 echo \} >> output.txt;
 echo Results in output.txt;
-echo Copy contents of the output.txt, visit http://viz-js.com/, paste the content and enjoy\:\).    
+echo Copy contents of the output.txt, visit http://viz-js.com/, paste the content and enjoy\\:\\).    
 EOF
 chmod +x draw.sh
 ./draw.sh
